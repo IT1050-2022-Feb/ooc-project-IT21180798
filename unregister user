@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+#include<cstring>
+#include<iomanip>
+
+class unregisteruser{
+	
+	private:
+		char usename[20];
+		char email[];
+		
+	public:
+		
+		unregisteruser();
+		unregisteruser(char name[],char email[]);
+		void getusername();
+		void getemail();
+		
+};
+
+unregisteruser::unregisteruser() {
+  strcpy(usename, "");
+  strcpy(email,"");
+}
+
+unregisteruser::unregisteruser(char name[],char email[]) {
+  strcpy(usename, name);
+  strcpy(email, email);
+}
+
+void unregisteruser::getusername(){
+
+}
+
+void unregisteruser::getemail(){
+
+}
+
+int main()
+{
+	 unregisteruser ("Ishara", "ishara@gmail.com");
+	 return 0;
+}
