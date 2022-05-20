@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+#include<cstring>
+
+class markerting_ref{
+
+	private:
+		char markertingref_name [10];
+		char markertingref_email [];
+		
+	public:
+		
+		markerting_ref();
+		markerting_ref( char m_ref_name[],char m_ref_email[]);
+		void getmarkerting_ref_name();
+		void getmarkerting_ref_email();
+		
+	
+};
+
+markerting_ref::markerting_ref()
+{
+	strcpy(markertingref_name, "" );
+	strcpy(markertingref_email, "");
+	
+}
+
+markerting_ref::markerting_ref( char m_ref_name [],char m_ref_email[])
+{
+	strcpy(markertingref_name,m_ref_name);
+	strcpy(markertingref_email,m_ref_email);
+}
+
+
+
+
+void markerting_ref::getmarkerting_ref_name(){
+}
+
+void markerting_ref::getmarkerting_ref_email(){
+}
+int main ()
+{
+	markerting_ref("Kalum Pathirana","Kalumpathirana264@gmail.com");
+	
+	return 0;
+}
+
